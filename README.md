@@ -24,13 +24,6 @@ Welcome to my personal portfolio website built using HTML and CSS. This site is 
 
 ---
 
-## Preview
-
-![Portfolio Preview](https://your-screenshot-link.com)  
-*(Add a screenshot or live demo link here)*
-
----
-
 ## Folder Structure
 
 📁 Portfolio/
