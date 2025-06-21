@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1e2f;
+    color: #eaeaea;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 40px 20px;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade-in animation for body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo animation */
+h1 {
+    color: #f39c12;
+    font-size: 2.5rem;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+a {
+    color: #00adb5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Contact Form Animation */
+form {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 0 10px #00000050;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+/* Animate form separately */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 5px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: #2c2c3f;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #00adb5;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background: #00adb5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #007b7f;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #999;
+    animation: fadeIn 1.2s ease 0.5s backwards;
+}
